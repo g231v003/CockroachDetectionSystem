@@ -2,6 +2,8 @@ import cv2
 import matplotlib.pyplot as plt
 from ultralytics import YOLO  # YOLOv8などに応じて変更
 import os  # ファイルパス操作に必要
+import picture_
+
 def detect_and_save_objects(image_path, model_path="use\cockroach-s.pt"):
     """
     画像に対して物体検出を実行し、結果を保存および表示する関数。
@@ -33,7 +35,7 @@ def detect_and_save_objects(image_path, model_path="use\cockroach-s.pt"):
     print(max_score)
 
     # 検出結果を画像に描画
-    annotated_image = results[0].plot()  # YOLOv5の結果描画機能を利用
+    annotated_image = results[0].plot()  # YOLO11の結果描画機能を利用
     # 保存パスを決定（入力画像と同じディレクトリに保存）
     input_dir = os.path.dirname(image_path)
     output_path = os.path.join(input_dir, "annotated_image.jpg")
@@ -44,6 +46,8 @@ def detect_and_save_objects(image_path, model_path="use\cockroach-s.pt"):
     # plt.imshow(cv2.cvtColor(annotated_image, cv2.COLOR_BGR2RGB))
     # plt.axis("off")
     # plt.show()
+
+
 
     return(max_score)
 # 使用例
