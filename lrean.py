@@ -10,14 +10,15 @@ if __name__ == '__main__':
     # YOLOモデルの読み込み（事前学習済みモデル）
     # 注意：学習には相当な時間がかかります。事前学習済みモデルは基本的に「yolo11n.pt」を使用してください。
 
-    model = YOLO("yolo11n.pt")
+    # model = YOLO("yolo11n.pt")
     # model = YOLO("yolo11s.pt")
     # model = YOLO("yolo11m.pt")
     # model = YOLO("yolo11l.pt")
     # model = YOLO("yolo11x.pt")
+    model = YOLO("use\cockroach-s.pt")
 
     # トレーニングの実行
-    model.train(data="cockroach.yaml", epochs=50, batch=32, project="data_output/runs", device=0) 
+    model.train(data="new_datasets\cockroach.yaml", epochs=50, batch=32, project="data_output/runs", device=0) 
 
     """
     学習完了後、「data_output/runs/train(学習回数)/weights」フォルダ内に二つptファイルが生成されます。

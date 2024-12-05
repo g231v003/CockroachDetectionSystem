@@ -1,0 +1,33 @@
+train: C:\Users\g231v003\Documents\VSCode\project-G\new_datasets\train\images
+val: C:\Users\g231v003\Documents\VSCode\project-G\new_datasets\valid\images
+test: C:\Users\g231v003\Documents\VSCode\project-G\new_datasets\test\images
+
+nc: 1
+names: ['Cockroach']
+
+roboflow:
+  workspace: school-project-cwbwv
+  project: esp3902
+  version: 1
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/school-project-cwbwv/esp3902/dataset/1
+
+
+"settings_version": "0.0.6"
+# "datasets_dir": "./datasets"
+"weights_dir": "./data_output/weights"
+"runs_dir": "./data_output/runs"
+"uuid": "b65167b517d417656b71977485e9e9282a61191cdf746e14a942c3314ba48960"
+"sync": true
+"api_key": ""
+"openai_api_key": ""
+"clearml": true
+"cmet": true
+"dvc": true
+"hub": true
+"mlflow": true
+"neptune": true
+"raytune": true
+"tensorboard": true
+"wandb": true
+"vscode_msg": true
