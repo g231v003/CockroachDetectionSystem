@@ -1,6 +1,6 @@
-train: ./datasets/train/images
-val: ./datasets/valid/images
-test: ./datasets/test/images
+train: ./new_datasets/train/images
+val: ./new_datasets/valid/images
+test: ./new_datasets/test/images
 
 nc: 1
 names: ['Cockroach']

@@ -1,7 +1,7 @@
 import os
 
 # アノテーションディレクトリのパスを設定
-annotations_dir = "C:/Users/g231v003/Documents/VSCode/project-G/new_datasets/test/labels"
+annotations_dir = r"C:\Users\g231v003\Documents\VSCode\project-G\new_datasets\label"
 
 # クラスIDの上限を設定
 max_class_id = 0  # nc - 1 に相当

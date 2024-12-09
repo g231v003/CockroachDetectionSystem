@@ -9,7 +9,7 @@ from ultralytics import YOLO
 #--------------------------------------------------
 
 # model = YOLO("use/cockroach-n.pt")
-model = YOLO("use/cockroach-s.pt") 
+model = YOLO("use/cockroach-sv2.pt") 
 
 #--------------------------------------------------
 
@@ -17,7 +17,7 @@ model = YOLO("use/cockroach-s.pt")
 # VideoCaptureの引数は、0 → デフォルトカメラ,　1以降の数 → サブカメラや外部カメラ　になります。
 #--------------------------------------------------
 
-cap = cv2.VideoCapture(0)
+cap = cv2.VideoCapture(1)
 
 #--------------------------------------------------
 
